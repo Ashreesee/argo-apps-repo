@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend  # Fixed indentation
-          image: ashreesee/backend:latest
+          image: ashreesee/backend:3d420a3-20250416113440
           ports:
             - containerPort: 3000  # Fixed indentation
           env:
