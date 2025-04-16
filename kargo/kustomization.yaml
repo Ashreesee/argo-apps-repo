@@ -1,0 +1,3 @@
+resources:
+  - warehouse.yaml
+  - stage.yaml
