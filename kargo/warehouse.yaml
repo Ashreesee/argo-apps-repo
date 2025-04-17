@@ -1,0 +1,9 @@
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Warehouse
+metadata:
+  name: backend-warehouse
+  namespace: kargo
+spec:
+  subscriptions:
+    - image: ashreesee/backend
+      semverConstraint: "*"
