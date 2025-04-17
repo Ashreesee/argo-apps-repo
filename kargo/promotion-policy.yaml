@@ -1,8 +1,0 @@
-apiVersion: kargo.akuity.io/v1alpha1
-kind: PromotionPolicy
-metadata:
-  name: frontend-auto
-  namespace: kargo
-spec:
-  stage: frontend-stage
-  enableAutoPromotion: true

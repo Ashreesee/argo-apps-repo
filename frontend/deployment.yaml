@@ -2,6 +2,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
+  namespace: kargo
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: frontend=ashreesee/frontend
+    argocd-image-updater.argoproj.io/update-strategy: latest
+    argocd-image-updater.argoproj.io/write-back-method: git:secret
+
 spec:
   replicas: 1
   selector:
@@ -14,7 +20,7 @@ spec:
     spec:
       containers:
         - name: frontend  # Fixed indentation
-          image: ashreesee/frontend:latest
+          image: ashreesee/frontend:manual
           ports:
             - containerPort: 5000  # Fixed indentation
           env:
