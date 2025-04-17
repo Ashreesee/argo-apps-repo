@@ -1,8 +1,15 @@
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse
 metadata:
-  name: backend-warehouse
+  name: backend
   namespace: kargo
 spec:
+  freightCreationPolicy: "Automatic"
+  interval: "1m"
+  shard: "default"
   subscriptions:
-    - image: ashreesee/backend
+    - image:
+        repoURL: "ghcr.io/ashreesee/frontend"
+        allowTags: ".*"
+        imageSelectionStrategy: "NewestBuild"
+        strictSemver: false
