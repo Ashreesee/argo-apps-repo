@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: frontend  # Fixed indentation
-          image: ashreesee/frontend:manual
+          image: ashreesee/frontend:latest
           ports:
             - containerPort: 5000  # Fixed indentation
           env:
