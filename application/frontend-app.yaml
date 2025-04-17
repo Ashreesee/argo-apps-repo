@@ -6,6 +6,7 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list: ashreesee/frontend
     argocd-image-updater.argoproj.io/ashreesee_frontend.update-strategy: latest
+    argocd-image-updater.argoproj.io/ashreesee_frontend.allow-tags: regexp:^2025[0-9]{8,}$
 spec:
   project: default
   source:
