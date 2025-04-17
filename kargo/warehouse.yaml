@@ -6,4 +6,3 @@ metadata:
 spec:
   subscriptions:
     - image: ashreesee/backend
-      semverConstraint: "*"

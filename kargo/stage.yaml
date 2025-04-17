@@ -7,9 +7,8 @@ spec:
   subscriptions:
     warehouse: backend-warehouse
   promotionMechanisms:
-    gitRepoUpdates:
-      repos:
-        - repoURL: https://github.com/ashreesee/argo-apps-repo.git
-          writeBranch: main
-          kustomize:
-            path: backend
+    gitRepoUpdate:
+      repoURL: https://github.com/ashreesee/argo-apps-repo.git
+      writeBranch: main
+      kustomize:
+        path: backend
